@@ -73,8 +73,18 @@ WSGI_APPLICATION = 'todoProject.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'todo_db',
+        'USER':'postgres',
+        'PASSWORD':'postgres',
+        'HOST':'localhost'
+    }
+}
 
-v
+
+
 
 
 # Password validation
